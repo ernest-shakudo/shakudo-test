@@ -1,14 +1,11 @@
 pipeline:
   name: hello-world-pipeline
-  working_dir: /jobs and triggers/hello-world-pipeline
   tasks:
     - name: step1
       type: python
       notebook_path: scripts/hello.py
-      notebook_output_path: output/hello.txt
 
     - name: step2
       type: python
       notebook_path: scripts/world.py
-      notebook_output_path: output/hello.txt
       depends_on: step1
