@@ -3,9 +3,9 @@ pipeline:
   tasks:
     - name: step1
       type: python
-      notebook_path: jobs-and-triggers/hello-world-pipeline/scripts/hello.py
+      py_path: jobs-and-triggers/hello-world-pipeline/scripts/hello.py
 
     - name: step2
       type: python
       notebook_path: jobs-and-triggers/hello-world-pipeline/scripts/world.py
-      depends_on: step1
+      py_path: step1
