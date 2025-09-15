@@ -7,5 +7,5 @@ pipeline:
 
     - name: step2
       type: "vscode notebook"
-      notebook_path: jobs-and-triggers/hello-world-pipeline/scripts/world.py
-      py_path: step1
+      py_path: jobs-and-triggers/hello-world-pipeline/scripts/world.py
+      depends_on: step1
