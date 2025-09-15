@@ -1,5 +1,5 @@
 pipeline:
-  name: hello-world-pipeline
+  name: "hello-world-pipeline"
   tasks:
     - name: "step1"
       type: "vscode notebook"
