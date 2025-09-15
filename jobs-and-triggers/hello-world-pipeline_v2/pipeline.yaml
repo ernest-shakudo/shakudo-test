@@ -3,4 +3,5 @@ pipeline:
   tasks:
     - name: "Run Python Script"
       type: "vscode notebook"
-      py_path: "example_notebooks/pipelines/python_hello_world_pipeline/hello_world.py"
+      py_path: "jobs-and-triggers/hello-world-pipeline_v2/hello_world.py"
+      
