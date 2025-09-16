@@ -8,4 +8,4 @@ pipeline:
     - name: "Run Python Script 2"
       type: "vscode notebook"
       py_path: "jobs-and-triggers/hello-world-pipeline_v2/goodbye.py"
-      
+      depends_on: ["Run Python Script"]
